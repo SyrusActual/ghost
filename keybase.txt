@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/themanyhatsclub
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://themanyhats.club
+  * I am themanyhatsclub (https://keybase.io/themanyhatsclub) on keybase.
+  * I have a public key with fingerprint 3A79 27A6 88C8 EA00 A9B8  4DBF 5C30 D995 E0A1 449C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01012e6e009a7794f37a3a8352f236c2802366f4257227d4d325a1a2acd6fb4634da0a",
+      "fingerprint": "3a7927a688c8ea00a9b84dbf5c30d995e0a1449c",
+      "host": "keybase.io",
+      "key_id": "5c30d995e0a1449c",
+      "kid": "01012e6e009a7794f37a3a8352f236c2802366f4257227d4d325a1a2acd6fb4634da0a",
+      "uid": "d06eb0b847c76efc5ed3fd03f7d99019",
+      "username": "themanyhatsclub"
+    },
+    "service": {
+      "hostname": "themanyhats.club",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1519266397,
+  "expire_in": 157680000,
+  "prev": "b6acb70af00322e8c6528c9e951d49baadf70d3b2abea58e81b00e7c5ec2ee28",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIpAnicrZJrSFRBFMd3s61WyMSUAiFoEkzblblz30sEWoLSRoZfMpJl7p257sV1
+d717d8ssMtSIHiKUEPkIkiArlewhhJU9PghGXzJIIrPo/YKCUgqquVKf6mPz5TBz
+fud//ucwdxanudLd5uzRQNsqwecev3kq6drWVljdCLQYaQCBRlBL5wKNEJqwQ7Um
+AQEAOcghKlEIVSzLqmDwMuaxwovIQLykIwWyIBkCEmWEZCIQHomYwwjrRDI0QeIF
+giEGPmCY0RpqxS0zajNZHssqkrGkKLpCMYRY1RSBaIao85Coqkgh5gRB1VlhOJZw
+Kpg5DSdokRljb+wSmrP3D/4/+07OyREoUQ0yj7IuS9TQRUp4g0DekFl3yKkOmKBW
+FNdRRtthWoejDWFsJ/RIUgN7fIAlU6ZOnf06A/0NFs2RPhC3YnZMj0VYNmzb8UTA
+qbYb4g6+g2qh30IhzYwStlJWkaJWwoxFQYBjpG6bjjInciqSJF6VfYDujJsWDZkO
+IcqSAtlx+tAUk9QkrGsyxAaEPEJU0SURKbpKVZEjgqphTAwZEl5DWKNYVKjCaRBS
+mS1AR5QiBTij1UdjICAwm7iGSSbMmii2kxYFe26Nbp/vcqe7FnjmOV/Nle7N/PMB
+5+1d+DPuG2neMJ4zX14xtP+250huASaja5duwC3++88rB+DEZphZEFpy8kdw4uyO
+qU5ogtzI1eNbBz9mfb317cPqHndmx7Mqf96ufe0d/iMvOKWkp/Tc6a78x9UHs4YP
+nCl7VV7vbTqft7x1d/ZIdmbk0rlDQWEjV/b+GM0PTnzqL7IuZHgfjlfU310xmXFd
+LT+45eLbJ58LS4srLoyBqa2ni7PBmULf9ODhG98beyvGlo34m2a7u9Y9WJ+joJXD
+1+w3r4It/S8HbqdmXn/u/V555V1OWQdub08raa76crbUO9m3ftvqXE9f6+VFb41H
+enfn0/rJe1MzddNbhto3ZZ2o8qzpXPYL8m4++w==
+=Q/PS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/themanyhatsclub
+
+==================================================================
