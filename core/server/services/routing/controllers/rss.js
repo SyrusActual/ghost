@@ -27,7 +27,8 @@ module.exports = function rssController(req, res, next) {
 
     const pathOptions = {
         page: req.params.page !== undefined ? req.params.page : 1,
-        slug: req.params.slug ? security.string.safe(req.params.slug) : undefined
+        slug: req.params.slug ? security.string.safe(req.params.slug) : undefined,
+        limit: 9999
     };
 
     // CASE: we are using an rss cache - url must be normalised (without pagination)
