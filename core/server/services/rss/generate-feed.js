@@ -77,6 +77,7 @@ generateFeed = function generateFeed(baseUrl, data) {
             title: data.title,
             description: data.description,
             generator: 'Ghost ' + data.safeVersion,
+			author: data.title, 
             feed_url: feedUrl,
             site_url: siteUrl,
             image_url: urlService.utils.urlFor({relativeUrl: 'favicon.png'}, true),
