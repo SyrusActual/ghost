@@ -33,13 +33,24 @@ generateItem = function generateItem(post, siteUrl, secure) {
             author: post.primary_author ? post.primary_author.name : null,
             custom_elements: [
                 { 'author': 'podcast@themanyhats.club' },
-                { 'itunes:author': 'podcast@themanyhats.club' }
+                { 'itunes:author': 'podcast@themanyhats.club' },
+                { 'itunes:episodeType': 'full' },
+                { 'itunes:explicit': 'yes' },
+                { 'itunes:title': post.title }                
             ]
         },
         imageUrl;
 
     if (post.feature_image) {
         imageUrl = urlService.utils.urlFor('image', {image: post.feature_image, secure: secure}, true);
+
+        item.custom_elements.push({
+            'itunes:image': {
+                _attr: {
+                    href: imageUrl
+                }
+            }
+        });
 
         // Add a media content tag
         item.custom_elements.push({
@@ -90,10 +101,15 @@ generateFeed = function generateFeed(baseUrl, data) {
                 itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
             },
             custom_elements: [
+                { 'language': 'en-us' },
+                { 'copyright': 'The Many Hats Club' },
                 { 'itunes:author': 'podcast@themanyhats.club' },
                 { 'itunes:type': 'episodic' },
                 { 'itunes:explicit': 'yes' },
-                { 'itunes:image': 'https://themanyhats.club/content/images/2018/01/TMHC_iTunes_Logo.png' },
+                { 'itunes:image': {
+                    _attr: { href: 'https://themanyhats.club/content/images/2018/01/TMHC_iTunes_Logo.png' }
+                    }
+                },
                 { 'itunes:category': [
                     {_attr: {
                       text: 'Technology'
