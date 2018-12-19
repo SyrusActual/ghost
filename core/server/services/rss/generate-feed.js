@@ -31,7 +31,10 @@ generateItem = function generateItem(post, siteUrl, secure) {
             date: post.published_at,
             categories: generateTags(post),
             author: post.primary_author ? post.primary_author.name : null,
-            custom_elements: []
+            custom_elements: [
+                { 'author': 'podcast@themanyhats.club' },
+                { 'itunes:author': 'podcast@themanyhats.club' }
+            ]
         },
         imageUrl;
 
@@ -74,18 +77,35 @@ generateFeed = function generateFeed(baseUrl, data) {
     var siteUrl = urlService.utils.urlFor('home', {secure: data.secure}, true),
         feedUrl = urlService.utils.urlFor({relativeUrl: baseUrl, secure: data.secure}, true),
         feed = new RSS({
-            title: data.title,
+            title: data.title,            
             description: data.description,
             generator: 'Ghost ' + data.safeVersion,
-			author: data.title, 
             feed_url: feedUrl,
             site_url: siteUrl,
             image_url: urlService.utils.urlFor({relativeUrl: 'favicon.png'}, true),
             ttl: '60',
             custom_namespaces: {
                 content: 'http://purl.org/rss/1.0/modules/content/',
-                media: 'http://search.yahoo.com/mrss/'
-            }
+                media: 'http://search.yahoo.com/mrss/',
+                itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+            },
+            custom_elements: [
+                { 'itunes:author': 'podcast@themanyhats.club' },
+                { 'itunes:type': 'episodic' },
+                { 'itunes:explicit': 'yes' },
+                { 'itunes:image': 'https://themanyhats.club/content/images/2018/01/TMHC_iTunes_Logo.png' },
+                { 'itunes:category': [
+                    {_attr: {
+                      text: 'Technology'
+                    }},
+                    {'itunes:category': {
+                      _attr: {
+                        text: 'Tech News'
+                      }
+                    }}
+                  ]
+              }           
+            ]
         });
 
     data.posts.forEach(function forEach(post) {
